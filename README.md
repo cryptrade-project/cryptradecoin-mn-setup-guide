@@ -73,7 +73,7 @@ TxHash: First value from Step 6
 Output index: Second value from Step 6
 ```
 8. Save and close the file.
-9. Go to `Masternode` Tab. (***If you tab is not shown, please enable it from: `Settings` -> `Options` -> `Wallet` -> `Show Masternodes Tab`***)
+9. Go to `Masternode` Tab. ( ***If you tab is not shown, please enable it from: `Settings` -> `Options` -> `Wallet` -> `Show Masternodes Tab`*** )
 10. Click `Update status` button to see your masternode. If it is not shown, close the wallet and start it again. Make sure the wallet is unlocked.
 11. Choose the masternode you just created and click `Start alias` button.
 
