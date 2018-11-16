@@ -35,6 +35,8 @@ This guide is for a single masternode, on a Ubuntu 14.04, 16.04 or 18.04 64bit s
 
 The basic reasoning for these requirements is that you get to keep your CRCO in your local wallet and host your masternode remotely, securely.
 
+***
+
 ## Install Masternode on VPS
 
 Login your VPS, and then copy/paste the following commands one by one with `Enter`. Our automatic masternode install script will help you install the masternode on your VPS. But plase make sure that your vps is running Ubuntu 14.04, 16.04 or 18.04 before you execute the following commands.
@@ -44,6 +46,8 @@ wget -q https://raw.githubusercontent.com/cryptrade-project/cryptradecoin-mn-ins
 chmod u+x install.sh
 ./install.sh
 ```
+
+***
 
 ## Configuration of Your Local Wallet
 
@@ -55,9 +59,8 @@ After the masternode is up and running on your vps, you need to configure your l
 4. Wait for at least 15 confirmations.
 5. Open `Tools` -> `Debug console - Console`.
 6. Type the following command: `masternode outputs`.
-7. Open `Tools` -> `Open Masternode Configuration File`.
+7. Open `Tools` -> `Open Masternode Configuration File`. ***Add the following entry:***
 
-***Add the following entry:***
 ```shell
 Alias Address Privkey TxHash Output_index
 ```
@@ -74,6 +77,7 @@ Output index: Second value from Step 6
 10. Click `Update status` button to see your masternode. If it is not shown, close the wallet and start it again. Make sure the wallet is unlocked.
 11. Choose the masternode you just created and click `Start alias` button.
 
+***
 
 ## MN Collateral
 <table>
