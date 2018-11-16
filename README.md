@@ -22,7 +22,7 @@ CryptradeCoin(CRCO) is a private and anonymous cryptocurrency which is officiall
 
 ## Introduction
 
-This guide is for a single masternode, on a Ubuntu 14.04, 16.04 or 18.04 64bit server (VPS) running headless and will be controlled from the wallet on your **local computer (Control wallet)**. The wallet on the the VPS will be referred to as the **Remote wallet**.
+This guide is for a single masternode, on a Ubuntu 14.04, 16.04 or 18.04 64bit server (VPS) running headless and will be controlled from the wallet on your **local computer (Control wallet or Local Wallet)**. The wallet on the the VPS will be referred to as the **Remote wallet**.
 
 **Basic Requirements:**
 
@@ -46,6 +46,34 @@ chmod u+x install.sh
 ```
 
 ## Configuration of Your Local Wallet
+
+After the masternode is up and running on your vps, you need to configure your local wallet/control wallet. Below is the steps:
+
+1. Open the CryptradeCoin Wallet on your local computer.
+2. Go to `RECEIVE` tab and create a new address with a specific label, for example: **MN1**
+3. Send 1000 CRCO to the address you just created in Step 2.
+4. Wait for at least 15 confirmations.
+5. Open `Tools` -> `Debug console - Console`.
+6. Type the following command: `masternode outputs`.
+7. Open `Tools` -> `Open Masternode Configuration File`.
+
+***Add the following entry:***
+```shell
+Alias Address Privkey TxHash Output_index
+```
+
+```shell
+Alias: The label you set in Step 2.
+Address: VPS_IP:PORT  # the default port is 15600
+Privkey: Masternode Private Key # Our automatic masternode install script will show you the masternode private key when finish the installation on the vps.
+TxHash: First value from Step 6
+Output index: Second value from Step 6
+```
+8. Save and close the file.
+9. Go to `Masternode` Tab. (***If you tab is not shown, please enable it from: `Settings` -> `Options` -> `Wallet` -> `Show Masternodes Tab`***)
+10. Click `Update status` button to see your masternode. If it is not shown, close the wallet and start it again. Make sure the wallet is unlocked.
+11. Choose the masternode you just created and click `Start alias` button.
+
 
 ## MN Collateral
 <table>
