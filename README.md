@@ -82,8 +82,8 @@ Output index: Second value from Step 6
 ## MN Collateral
 <table>
 <tr><th>Block Height</th><th>MN Collateral</th></tr>
-<tr><td>1-450,000</td><td>1,000 CRCO</td></tr>
-<tr><td>450,001-90,000</td><td>2,000 CRCO</td></tr>
+<tr><td>1-45,000</td><td>1,000 CRCO</td></tr>
+<tr><td>45,001-90,000</td><td>2,000 CRCO</td></tr>
 <tr><td>90,001-135,000</td><td>4,000 CRCO</td></tr>
 <tr><td>135,001-270,000</td><td>6,000 CRCO</td></tr>
 <tr><td>270,001-540,000</td><td>8,000 CRCO</td></tr>
